@@ -2,8 +2,19 @@ package com.bridgelabgambler;
 
 public class GamblerProg
 {
-    public static void main(String[] args) {
-        System.out.println("welcome to gambler stimulation" );
-    }
+
+        static int stake=100;
+        static int bet = 1;
+
+        static void method1() {
+            System.out.println("the glambler had a stake:" +"" +stake);
+            System.out.println("the glambler will bet:" +bet);
+        }
+
+
+        public static void main(String[] args) {
+            method1();
+        }
+
 }
 
