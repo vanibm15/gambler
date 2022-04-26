@@ -1,20 +1,35 @@
 package com.bridgelabgambler;
 
-public class GamblerProg
-{
+import java.util.Random;
+import java.util.Scanner;
 
-        static int stake=100;
-        static int bet = 1;
+public class GamblerProg {
 
-        static void method1() {
-            System.out.println("the glambler had a stake:" +"" +stake);
-            System.out.println("the glambler will bet:" +bet);
+    static int stake = 100;
+    static int bet = 1;
+    static Random betnum = new Random();
+
+    static void method1() {
+        System.out.println("the glambler had a stake:" + "" + stake);
+        System.out.println("the glambler will bet:" + bet);
+    }
+
+    static void method2() {
+        int checknum = betnum.nextInt(2);
+        if (checknum == 1) {
+            System.out.println("he wins");
+
+        } else {
+            System.out.println("he lose");
+
+
         }
-
-
-        public static void main(String[] args) {
+    }
+        public static void main (String[]args){
             method1();
+            method2();
         }
 
-}
+    }
+
 
