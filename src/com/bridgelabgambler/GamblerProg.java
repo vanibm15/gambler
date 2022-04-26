@@ -21,15 +21,37 @@ public class GamblerProg {
 
         } else {
             System.out.println("he lose");
-
-
-        }
-    }
-        public static void main (String[]args){
-            method1();
-            method2();
         }
 
     }
+
+    static void method3() {
+
+        final int win = 1;
+        final int lose = 0;
+        int amount = 100;
+        int percentage = 50;
+        while (amount > 50 && amount < 150) {
+            int options = betnum.nextInt(3);
+            switch (options) {
+                case win:
+                    amount = amount + percentage;
+                    break;
+                case lose:
+                    amount = amount - percentage;
+                    break;
+            }
+
+        }
+        System.out.println("amount left:" + "" + amount);
+    }
+
+    public static void main(String[] args) {
+        method1();
+        method2();
+        method3();
+    }
+
+}
 
 
