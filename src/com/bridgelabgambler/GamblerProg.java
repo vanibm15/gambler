@@ -36,9 +36,11 @@ public class GamblerProg {
             switch (options) {
                 case win:
                     amount = amount + percentage;
+                    System.out.println("its win month");
                     break;
                 case lose:
                     amount = amount - percentage;
+                    System.out.println("its loss month!");
                     break;
             }
 
